@@ -1,0 +1,34 @@
+{
+ "A0": {
+  "n": 30,
+  "out_median": 2382.5,
+  "out_total": 80063,
+  "ctx_total": 9365180,
+  "tool_calls_median": 2.0,
+  "skill_tool_used": 0
+ },
+ "A1": {
+  "n": 30,
+  "out_median": 8911.5,
+  "out_total": 256824,
+  "ctx_total": 26103747,
+  "tool_calls_median": 6.0,
+  "skill_tool_used": 0
+ },
+ "R1": {
+  "n": 30,
+  "out_median": 2574.5,
+  "out_total": 76784,
+  "ctx_total": 8985196,
+  "tool_calls_median": 2.0,
+  "skill_tool_used": 0
+ },
+ "A1v12": {
+  "n": 30,
+  "out_median": 7655.5,
+  "out_total": 238832,
+  "ctx_total": 24419815,
+  "tool_calls_median": 6.0,
+  "skill_tool_used": 0
+ }
+}

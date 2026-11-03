@@ -1,0 +1,29 @@
+{
+ "A1": {
+  "n": 18,
+  "out_median": 7902.5,
+  "out_total": 135579,
+  "ctx_total": 14373211,
+  "tool_calls_median": 6.0,
+  "skill_tool_used": 0,
+  "global_skill_path_reads": 0
+ },
+ "R1": {
+  "n": 18,
+  "out_median": 3236.0,
+  "out_total": 63859,
+  "ctx_total": 6567106,
+  "tool_calls_median": 2.5,
+  "skill_tool_used": 0,
+  "global_skill_path_reads": 0
+ },
+ "A0": {
+  "n": 18,
+  "out_median": 2848.0,
+  "out_total": 55326,
+  "ctx_total": 6486625,
+  "tool_calls_median": 2.5,
+  "skill_tool_used": 0,
+  "global_skill_path_reads": 0
+ }
+}
