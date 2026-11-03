@@ -4,6 +4,8 @@
 
 - English only. The Russian translation is removed so there is a single copy of the rules.
 - `INSTALL.md`: install paths for Cursor and Codex (`.agents/skills/`), and what is Claude Code only.
+- Installable as a Claude Code plugin (`.claude-plugin/plugin.json`, `.claude-plugin/marketplace.json`) and
+  with the skills CLI (`npx skills add volniy082-spec/dev-discipline`).
 
 - `references/delegation.md`:
   - §0 ceremony levels S/M/L by risk;

@@ -1,0 +1,17 @@
+{
+  "name": "dev-discipline",
+  "owner": {
+    "name": "Andrey Zheltukhin",
+    "url": "https://github.com/volniy082-spec"
+  },
+  "metadata": {
+    "description": "The dev-discipline skill for coding agents"
+  },
+  "plugins": [
+    {
+      "name": "dev-discipline",
+      "source": "./",
+      "description": "Engineering discipline for coding agents: proven tests, protected oracles, re-executed numbers, honest exits."
+    }
+  ]
+}

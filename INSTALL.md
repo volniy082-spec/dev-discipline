@@ -3,7 +3,23 @@
 Claude Code loads skills from `<project>/.claude/skills/` (one project) or `~/.claude/skills/`
 (every project of the user). You need `git`, `python3` ≥ 3.9 and, for the self-test, `pytest`.
 
-## Per project (recommended)
+## As a Claude Code plugin
+```bash
+claude plugin marketplace add volniy082-spec/dev-discipline
+claude plugin install dev-discipline@dev-discipline
+```
+The repository is both the marketplace and the plugin (`.claude-plugin/`); the root `SKILL.md` loads as the
+plugin's single skill, and the scripts ship with it. `claude plugin marketplace update dev-discipline` pulls
+a new version. The agent role files in `templates/agents/` are templates: they are not registered as plugin
+agents; copy the ones you use into `.claude/agents/`.
+
+## With the skills CLI (any agent)
+```bash
+npx skills add volniy082-spec/dev-discipline        # add -g for all projects
+```
+It detects installed agents (Claude Code, Cursor, Codex and others) and asks where to install.
+
+## By hand, per project (recommended for a project with its own test guard)
 ```bash
 git clone https://github.com/volniy082-spec/dev-discipline /tmp/dev-discipline
 mkdir -p <project>/.claude/skills

@@ -1,0 +1,21 @@
+{
+  "name": "dev-discipline",
+  "version": "1.3.0",
+  "description": "Engineering discipline for coding agents: done is said by an external signal the agent did not tune. Proven tests, protected oracles, re-executed numbers, honest exits; with an A/B evaluation.",
+  "author": {
+    "name": "Andrey Zheltukhin",
+    "url": "https://github.com/volniy082-spec"
+  },
+  "homepage": "https://github.com/volniy082-spec/dev-discipline",
+  "repository": "https://github.com/volniy082-spec/dev-discipline",
+  "license": "MIT",
+  "keywords": [
+    "testing",
+    "regression-testing",
+    "flaky-tests",
+    "mutation-testing",
+    "code-review",
+    "reward-hacking",
+    "agent-skills"
+  ]
+}

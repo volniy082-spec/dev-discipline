@@ -50,7 +50,24 @@ The agent templates use Claude Code subagent frontmatter (`model:`, `isolation:`
 
 ## Install
 
-Per project (recommended):
+**Claude Code, as a plugin** (two commands; updates come with new versions):
+
+```bash
+claude plugin marketplace add volniy082-spec/dev-discipline
+claude plugin install dev-discipline@dev-discipline
+```
+
+Inside a session the same is `/plugin marketplace add volniy082-spec/dev-discipline`, then
+`/plugin install dev-discipline@dev-discipline`. Plugin skills are namespaced: `dev-discipline:dev-discipline`.
+
+**Any agent, with the [skills CLI](https://github.com/vercel-labs/skills)** (Claude Code, Cursor, Codex and others;
+it asks which agents to install into):
+
+```bash
+npx skills add volniy082-spec/dev-discipline
+```
+
+**By hand.** Per project (recommended):
 
 ```bash
 git clone https://github.com/volniy082-spec/dev-discipline /tmp/dev-discipline
