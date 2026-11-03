@@ -1,6 +1,7 @@
 # dev-discipline
 
-A [Claude Code](https://docs.claude.com/en/docs/claude-code) skill that makes an AI coding agent
+An agent skill (written for [Claude Code](https://docs.claude.com/en/docs/claude-code); the core and scripts
+also work in Cursor and Codex, see `INSTALL.md`) that makes an AI coding agent
 (or a human) prove that a change is done, instead of declaring it done. It ships a short operating
 procedure (`SKILL.md`), reference notes, agent role templates, and a set of small, stdlib-only
 scripts that check the proof mechanically.
@@ -52,7 +53,7 @@ The agent templates use Claude Code subagent frontmatter (`model:`, `isolation:`
 Per project (recommended):
 
 ```bash
-git clone <repo-url> /tmp/dev-discipline
+git clone https://github.com/volniy082-spec/dev-discipline /tmp/dev-discipline
 mkdir -p <project>/.claude/skills
 cp -R /tmp/dev-discipline <project>/.claude/skills/dev-discipline
 rm -rf <project>/.claude/skills/dev-discipline/.git
@@ -61,7 +62,7 @@ rm -rf <project>/.claude/skills/dev-discipline/.git
 Globally, for every project of the user:
 
 ```bash
-git clone <repo-url> ~/.claude/skills/dev-discipline
+git clone https://github.com/volniy082-spec/dev-discipline ~/.claude/skills/dev-discipline
 ```
 
 Then run the self-test (it works in a throwaway repo under `$TMPDIR` with an isolated git config):
@@ -69,6 +70,8 @@ Then run the self-test (it works in a throwaway repo under `$TMPDIR` with an iso
 ```bash
 bash <skill dir>/scripts/selftest.sh      # expected last line: selftest: 91/91 passed
 ```
+
+Cursor and Codex: see "Other agents" in `INSTALL.md` (one copy in `.agents/skills/` serves both).
 
 No hooks are installed. `guard_diff.py` is meant to run in the gate or CI, as a warning first.
 A project that already has its own test guard passes its allowlist via `.dev-discipline.json`

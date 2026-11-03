@@ -3,6 +3,7 @@
 ## 1.3.0
 
 - English only. The Russian translation is removed so there is a single copy of the rules.
+- `INSTALL.md`: install paths for Cursor and Codex (`.agents/skills/`), and what is Claude Code only.
 
 - `references/delegation.md`:
   - §0 ceremony levels S/M/L by risk;
